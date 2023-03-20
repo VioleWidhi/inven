@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: #111A25;
+  background-image: url(./assets/body-bg-3.png);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-[#1D2530] bg-opacity-80 backdrop-blur-sm;
+  box-shadow: inset 0 -1px 00 rgba(0, 0, 0, 0.1);
 }
